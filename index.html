@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <form action="" id="formulario" class="formulario">
+            <div class="form_group">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+                <p class="error"></p>
+            </div>
+
+            <div class="form_group">
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido">
+                <p class="error"></p>
+            </div>
+
+            <div class="form_group">
+                <label for="edad">Edad</label>
+                <input type="text" name="edad" id="edad">
+                <p class="error"></p>
+            </div>
+
+            <div class="form_group">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+                <p class="error"></p>
+            </div>
+
+            <div class="form_group">
+                <label>Sexo</label>
+                <div class="form-radio">
+                    <div><input type="radio" name="sexo" id="hombre"> Hombre</div>
+                    <div><input type="radio" name="sexo" id="mujer"> Mujer</div>
+                    <div><input type="radio" name="sexo" id="otro"> Otro</div>
+                </div>
+                <p class="error"></p>
+            </div>
+
+            <input class="btn" id="boton" type="submit" value="Enviar">
+        </form>
+    </main>
+
+    <script src="validate.js"></script>
+</body>
+
+</html>
